@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: tf
+spec:
+  containers:
+    - name: nvidia
+      image: xift/l4t-tensorflow:r32.5.0-tf2.3.1-py3
+      command: [ "sleep" ]
+      args: [ "1d" ]
