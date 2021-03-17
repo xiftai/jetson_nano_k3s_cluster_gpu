@@ -17,3 +17,5 @@ https://hub.docker.com/repository/docker/xift/l4t-tensorflow
 - jetson_devicequery:r32.5.0
 https://hub.docker.com/repository/docker/xift/jetson_devicequery
 
+- l4t-tensorflow-jupyterlab:r32.5.0-tf2.3.1-py3
+https://hub.docker.com/repository/docker/xift/l4t-tensorflow-jupyterlab
