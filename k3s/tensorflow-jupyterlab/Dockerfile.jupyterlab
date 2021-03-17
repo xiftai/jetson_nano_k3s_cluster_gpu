@@ -1,0 +1,12 @@
+FROM xift/l4t-tensorflow:r32.5.0-tf2.3.1-py3
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update ; apt-get install -y curl
+RUN curl -fsSL https://deb.nodesource.com/setup_12.x | bash -
+RUN apt-get install -y nodejs 
+RUN pip3 install jupyter jupyterlab
+RUN jupyter labextension install @jupyter-widgets/jupyterlab-manager
+
+EXPOSE 8888
+ENTRYPOINT ["jupyter", "lab", "--ip=0.0.0.0", "--allow-root"]
